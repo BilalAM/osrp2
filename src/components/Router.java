@@ -91,9 +91,10 @@ public class Router {
 		String ip = scanner.nextLine();
 		Socket socket = null;
 		try {
-
+		         socket = new Socket(InetAddress.getByName(ip), PORT);
 			if (checkExistingConnection(socket)) {
 				System.out.println("Connection already exists....");
+				socket.close();
 			} else {
 				socket = new Socket(InetAddress.getByName(ip), PORT);
 				System.out.println("Connected to a router " + ip);
