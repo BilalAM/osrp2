@@ -1,4 +1,4 @@
-package package1;
+package components;
 
 import java.net.InetAddress;
 import java.util.ArrayList;

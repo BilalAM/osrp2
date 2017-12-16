@@ -1,4 +1,4 @@
-package package1;
+package components;
 
 public class Responder {
 
